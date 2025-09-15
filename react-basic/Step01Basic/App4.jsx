@@ -51,7 +51,7 @@ function App4() { // App4는 함수형 컴포넌트
             .then(data=>{
                 // 삭제 성공시 여기가 호출된다.
                 getMembers();
-            })
+            });
         }
     }
 

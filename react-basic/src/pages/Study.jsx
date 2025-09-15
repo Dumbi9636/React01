@@ -1,14 +1,12 @@
 // src/pages/Study.jsx
 
-import React from 'react';
-
+import styles from '../css/study.module.css';
 function Study() {
     return (
-        <>
-            <h1>Study 페이지</h1>
-            <p>열심히 공부해볼까?</p>
-        </>
+       <>
+            <h1 className={styles["my-bg"]}>Study 페이지</h1>
+       </>
     );
 }
 
-export default Study
+export default Study;

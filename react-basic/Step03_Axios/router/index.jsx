@@ -12,13 +12,10 @@
 import { createHashRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/Home";
-import Game from "../pages/Game";
-import Study from "../pages/Study";
-import Clients from "../pages/Clients";
-import ClientForm from "../pages/ClientForm";
-import ClientDetail from "../pages/ClientDetail";
-import ClientUpdateForm from "../pages/ClientUpdateForm";
-import NotFound from "../pages/NotFound";
+import Member from "../pages/Member";
+import MemberForm from "../pages/MemberForm";
+import MemberDetail from "../pages/MemberDetail";
+import MemberUpdateForm from "../pages/MemberUpdateForm";
 
 // 페이지 routing 정보를 배열에 미리 저장해둔다. 
 const routes=[
@@ -26,13 +23,10 @@ const routes=[
     // 그럴때도  Home 컴포넌트가 활성화 될수 있도록 라우트 정보를 추가한다. 
     {path:"/index.html", element: <Home/>},
     {path:"/", element:<Home/>}, // 최상위 경로일때 Home component 가 활성화되도록 
-    {path:"/game", element:<Game/>},
-    {path:"/study", element:<Study/>},
-    {path:"/clients", element:<Clients/>},
-    {path:"/clients/new", element:<ClientForm/>},
-    {path:"/clients/:num", element:<ClientDetail/>},
-    {path:"/clients/:num/edit", element:<ClientUpdateForm/>},
-    {path:"*", element:<NotFound/>}
+    {path:"/members", element:<Member/>},
+    {path:"/members/new", element:<MemberForm/>},
+    {path:"/members/:num", element:<MemberDetail/>},
+    {path:"/members/:num/edit", element:<MemberUpdateForm/>}
 ];
 
 //export 해줄 router 객체를 만든다
